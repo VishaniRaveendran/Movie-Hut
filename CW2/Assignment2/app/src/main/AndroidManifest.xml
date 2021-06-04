@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cw2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/watchmovie"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/watchmovie"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CW2">
+        <activity android:name=".RatingMovieActivity">
+            android:label = "Rating Movie"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cw2.MainActivity" />
+        </activity>
+        <activity android:name=".SearchMovieActivity" >
+
+            android:label = "Search Movie"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cw2.MainActivity" />
+        </activity>
+        <activity android:name=".EditMovieActivity" >
+            android:label = "Edit Movie"
+            android:parentActivityName=".EditMovieActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cw2.EditMainMoviesActivity" />
+
+        </activity>
+        <activity android:name=".EditMainMoviesActivity">
+            android:label = "Edit Movie"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cw2.MainActivity" />
+        </activity>
+        <activity android:name=".FavouritesMovieActivity">
+            android:label = "Favourite Movie"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cw2.MainActivity" />
+        </activity>
+        <activity android:name=".DisplayMovie">
+            android:label = "Display Movie"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cw2.MainActivity" />
+        </activity>
+        <activity android:name=".RegisterMovie">
+            android:label = "Register Movie"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cw2.MainActivity" />
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

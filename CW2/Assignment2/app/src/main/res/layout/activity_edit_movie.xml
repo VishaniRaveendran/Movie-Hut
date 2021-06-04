@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background16"
+    tools:context=".EditMovieActivity">
+
+
+        <EditText
+            android:id="@+id/year_et"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/year_hint"
+            android:inputType="datetime"
+            android:textColor="#2E0708"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleOfTheMovie_et" />
+
+        <EditText
+            android:id="@+id/review_et"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/review_hint"
+            android:inputType="textPersonName"
+            android:textColor="#2E0708"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratings_et" />
+
+        <EditText
+            android:id="@+id/favourite_et"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#2E0708"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/review_et" />
+
+        <EditText
+            android:id="@+id/actor_actresses_et"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/name_of_actors_actresses_hint"
+            android:inputType="textPersonName"
+            android:textColor="#2E0708"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/director_et" />
+
+        <EditText
+            android:id="@+id/titleOfTheMovie_et"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:backgroundTint="#63320808"
+            android:ems="10"
+            android:hint="@string/title_of_the_movie_hint"
+            android:inputType="textPersonName"
+            android:textColor="#2E0708"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_edit" />
+
+        <EditText
+            android:id="@+id/ratings_et"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/rating_hint"
+            android:inputType="textPersonName"
+            android:textColor="#2E0708"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actor_actresses_et" />
+
+        <EditText
+            android:id="@+id/director_et"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/name_of_the_director_hint"
+            android:inputType="textPersonName"
+            android:textColor="#2E0708"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/year_et" />
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="46dp"
+            android:onClick="updateData"
+            android:text="@string/update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/favourite_et" />
+
+        <TextView
+            android:id="@+id/titleName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/lemon"
+            android:text="@string/title_of_the_movie"
+            android:textColor="#070707"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/titleOfTheMovie_et"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_edit" />
+
+        <TextView
+            android:id="@+id/year_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/lemon"
+            android:text="@string/year"
+            android:textColor="#070707"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/year_et"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleName_tv" />
+
+        <TextView
+            android:id="@+id/director_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/lemon"
+            android:text="@string/director"
+            android:textColor="#070707"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/director_et"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/year_tv" />
+
+        <TextView
+            android:id="@+id/moviecast_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/lemon"
+            android:text="@string/actor_actress"
+            android:textColor="#070707"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/actor_actresses_et"
+            app:layout_constraintHorizontal_bias="0.022"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/director_tv" />
+
+        <TextView
+            android:id="@+id/rating_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/lemon"
+            android:text="@string/ratings"
+            android:textColor="#070707"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/ratings_et"
+            app:layout_constraintHorizontal_bias="0.022"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/moviecast_tv" />
+
+        <TextView
+            android:id="@+id/review_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/lemon"
+            android:text="@string/reviews"
+            android:textColor="#070707"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/review_et"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rating_tv" />
+
+
+        <TextView
+            android:id="@+id/favourite_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="62dp"
+            android:fontFamily="@font/lemon"
+            android:text="@string/favourite"
+            android:textColor="#070707"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/favourite_et"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/review_tv" />
+
+        <TextView
+        android:id="@+id/title_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/edit_movie_title"
+        android:fontFamily="@font/yeseva_one"
+        android:textAllCaps="true"
+        android:textColor="#651E07"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

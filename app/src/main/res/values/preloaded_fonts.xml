@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/chonburi</item>
+        <item>@font/freckle_face</item>
+        <item>@font/galada</item>
+        <item>@font/lemon</item>
+        <item>@font/limelight</item>
+        <item>@font/unlock</item>
+    </array>
+</resources>

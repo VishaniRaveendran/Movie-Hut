@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_favourite"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    android:checked="true"
+    android:fontFamily="@font/galada"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:textColor="#000000"
+    android:textColorHighlight="#FFFFFF"
+    android:textColorLink="#64FF22"
+    android:textCursorDrawable="@color/teal_700"
+    android:textSize="24sp" />
